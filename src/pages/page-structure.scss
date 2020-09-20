@@ -4,4 +4,18 @@
     align-items: center;
     flex-direction: column;
     margin: 3rem 3rem;
+
+    &-note {
+        margin-top: 1rem;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                color: #d6d6d6;
+            }
+        }
+    }
 }
