@@ -4,7 +4,7 @@ import LazyLoader from './components/LazyLoader/LazyLoader';
 import Menu from './components/Menu/Menu';
 import { ReactComponent as CaretIcon } from './components/Menu/Icons/caret.svg';
 
-const ImageLoaderPage = React.lazy(() => import('./pages/ImageLoaderPage/ImageLoaderPage'));
+const ImageLoaderPage = React.lazy(() => import('./pages/Images/ImageLoaderPage/ImageLoaderPage'));
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import UseImageLoader from '../../components/Hooks/Images/useImage/useImageLoader';
+import UseImageLoader from '../../../components/Hooks/Images/useImage/useImageLoader';
 import './ImageLoaderPage.scss';
-import '../page-structure.scss';
+import '../../page-structure.scss';
 
 const srcs = [
     "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
