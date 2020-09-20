@@ -1,0 +1,23 @@
+{
+	"menuTitles": [
+        {
+			"title": "Image Hooks",
+			"icon": "imageIcon",
+			"link": "images"
+		}
+    ],
+    "subMenus": [
+        {
+            "activeMenu": "images",
+            "backIcon": "arrowIcon",
+            "menuTitle": "Image Hooks",
+            "menuLinks": [
+                {
+                    "title": "Image Loader",
+                    "icon": "loadingIcon",
+                    "link": "/"
+                }
+            ]
+        }
+    ]
+}
