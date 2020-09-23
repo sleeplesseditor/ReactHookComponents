@@ -5,6 +5,7 @@ import Menu from './components/Menu/Menu';
 import { ReactComponent as CaretIcon } from './components/Menu/Icons/caret.svg';
 
 const ImageLoaderPage = React.lazy(() => import('./pages/Images/ImageLoaderPage/ImageLoaderPage'));
+const ImageErrorPage = React.lazy(() => import('./pages/Images/ImageErrorPage/ImageErrorPage'));
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Menu navIcon={<CaretIcon />} title={'React Hook Components'} />
       <Switch>
         <Route exact path="/" component={LazyLoader(ImageLoaderPage)} />
+        <Route exact path="/use-image-error" component={LazyLoader(ImageErrorPage)} />
       </Switch>
     </Router>
   );

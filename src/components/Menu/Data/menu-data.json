@@ -13,9 +13,14 @@
             "menuTitle": "Image Hooks",
             "menuLinks": [
                 {
-                    "title": "Image Loader",
+                    "title": "useImageLoader",
                     "icon": "loadingIcon",
                     "link": "/"
+                },
+                {
+                    "title": "useImageError",
+                    "icon": "errorIcon",
+                    "link": "/use-image-error"
                 }
             ]
         }
