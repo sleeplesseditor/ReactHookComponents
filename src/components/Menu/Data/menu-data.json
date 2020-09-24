@@ -4,6 +4,11 @@
 			"title": "Image Hooks",
 			"icon": "imageIcon",
 			"link": "images"
+        },
+        {
+			"title": "User Experience Hooks",
+			"icon": "userIcon",
+			"link": "user"
 		}
     ],
     "subMenus": [
@@ -21,6 +26,18 @@
                     "title": "useImageError",
                     "icon": "errorIcon",
                     "link": "/use-image-error"
+                }
+            ]
+        },
+        {
+            "activeMenu": "user",
+            "backIcon": "arrowIcon",
+            "menuTitle": "User Experience Hooks",
+            "menuLinks": [
+                {
+                    "title": "useKeyboardShortcut",
+                    "icon": "shortcutIcon",
+                    "link": "/use-shortcut-key"
                 }
             ]
         }

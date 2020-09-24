@@ -56,6 +56,23 @@ function useMultiKeyShortcut() {
     return keysPressed;
 }
 
+function areKeysPressed(keys = [], keysPressed = []) {
+  const required = new Set(keys);
+  for (var elem of keysPressed) {
+    required.delete(elem);
+  }
+  return required.size === 0;
+}
+
+const MultiKeysPressed = ({ keys, keysPressed, value }) => {
+  const arePressed = areKeysPressed(keys, keysPressed);
+
+  if (arePressed) {
+    return value;
+  }
+  return null;
+};
+
 export {
     useSingleKeyShortcut,
     useMultiKeyShortcut
