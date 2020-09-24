@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const useImageError = () => {
     const [element, setElement] = useState(null); 
@@ -8,10 +8,10 @@ const useImageError = () => {
     const retry = () => { setError(false); }
   
     useEffect(() => {
-      element?.addEventListener('error', _handleError);
+      element.addEventListener('error', _handleError);
   
       return () => {
-        element?.removeEventListener('error', _handleError);
+        element.removeEventListener('error', _handleError);
       }
     }, [element]);
   
