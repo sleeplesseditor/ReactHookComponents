@@ -6,7 +6,8 @@ import { ReactComponent as CaretIcon } from './components/Menu/Icons/caret.svg';
 
 const ImageLoaderPage = React.lazy(() => import('./pages/Images/ImageLoaderPage/ImageLoaderPage'));
 const ImageErrorPage = React.lazy(() => import('./pages/Images/ImageErrorPage/ImageErrorPage'));
-const ShortcutKeyPage = React.lazy(() => import('./pages/UserExperience/useKeyboardShortcutsPage'));
+const ShortcutKeyPage = React.lazy(() => import('./pages/UserExperience/useKeyboardShortcutsPage/useKeyboardShortcutsPage'));
+const LocalStoragePage = React.lazy(() => import('./pages/UserExperience/useLocalStoragePage/useLocalStoragePage'));
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={LazyLoader(ImageLoaderPage)} />
         <Route exact path="/use-image-error" component={LazyLoader(ImageErrorPage)} />
         <Route exact path="/use-shortcut-key" component={LazyLoader(ShortcutKeyPage)} />
+        <Route exact path="/use-local-storage" component={LazyLoader(LocalStoragePage)} />
       </Switch>
     </Router>
   );

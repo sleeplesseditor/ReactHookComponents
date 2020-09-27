@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useSingleKeyShortcut } from '../../components/Hooks/UserExperience/useKeyboardShortcut/useKeyboardShortcuts';
-import '../page-structure.scss';
+import { useSingleKeyShortcut } from '../../../components/Hooks/UserExperience/useKeyboardShortcut/useKeyboardShortcuts';
+import '../../page-structure.scss';
 import './useKeyboardShortcutsPage.scss';
 
-const ImageLoaderPage = () => {
+const UseKeyboardShortcutsPage = () => {
     const shortcut = useSingleKeyShortcut('/');
     return (
         <div className="page-container">
@@ -22,4 +22,4 @@ const ImageLoaderPage = () => {
     )
 }
 
-export default ImageLoaderPage;
+export default UseKeyboardShortcutsPage;

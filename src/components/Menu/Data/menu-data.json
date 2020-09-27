@@ -38,6 +38,11 @@
                     "title": "useKeyboardShortcut",
                     "icon": "shortcutIcon",
                     "link": "/use-shortcut-key"
+                },
+                {
+                    "title": "useLocalStorage",
+                    "icon": "storageIcon",
+                    "link": "/use-local-storage"
                 }
             ]
         }
