@@ -10,9 +10,11 @@ function Menu({ navIcon, title }) {
   function Navbar({ children, title }) {
     return (
       <nav className="navbar">
-        <h3 className='navbar-heading' data-testid='navbar-main'>
-          {title}
-        </h3>
+        <a href="/" className="navbar-link">
+          <h3 className='navbar-heading' data-testid='navbar-main'>
+            {title}
+          </h3>
+        </a>
         <ul className="navbar-nav">{children}</ul>
       </nav>
     );

@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
+// Used for preventing unmounted component errors
+
 const useSafeState = (initialValue) => {
     const isMountedRef = useRef(true);
     const [currentValue, setCurrentValue] = useState(initialValue);
@@ -9,7 +11,7 @@ const useSafeState = (initialValue) => {
             isMountedRef.current = false;
         }
     }, [isMountedRef]);
-    
+
     const setSafeState = (value) => {
         if (isMountedRef && isMountedRef.current) {
             setCurrentValue(value);

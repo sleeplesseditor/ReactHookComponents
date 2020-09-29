@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSingleKeyShortcut } from '../../../components/Hooks/UserExperience/useKeyboardShortcut/useKeyboardShortcuts';
 import '../../page-structure.scss';
 import './useKeyboardShortcutsPage.scss';
@@ -16,7 +16,7 @@ const UseKeyboardShortcutsPage = () => {
             </div>
             <p>Click '/' to test the shortcut key</p>
             <div className="page-container-note">
-                Inspired by Gabe Ragland's <a className="page-note-link" target="_blank" href="https://usehooks.com/useKeyPress/">article</a> 
+                Inspired by Gabe Ragland's <a className="page-note-link" target="_blank" rel="noopener noreferrer" href="https://usehooks.com/useKeyPress/">article</a> 
             </div>
         </div>
     )

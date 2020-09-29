@@ -6,6 +6,11 @@
 			"link": "images"
         },
         {
+			"title": "Perfomance Hooks",
+			"icon": "gaugeIcon",
+			"link": "performance"
+        },
+        {
 			"title": "User Experience Hooks",
 			"icon": "userIcon",
 			"link": "user"
@@ -26,6 +31,18 @@
                     "title": "useImageError",
                     "icon": "errorIcon",
                     "link": "/use-image-error"
+                }
+            ]
+        },
+        {
+            "activeMenu": "performance",
+            "backIcon": "arrowIcon",
+            "menuTitle": "Performance Hooks",
+            "menuLinks": [
+                {
+                    "title": "useSafeState",
+                    "icon": "safeStateIcon",
+                    "link": "/use-safe-state"
                 }
             ]
         },

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useImageError = () => {
     const [element, setElement] = useState(null); 
@@ -8,12 +8,16 @@ const useImageError = () => {
     const retry = () => { setError(false); }
   
     useEffect(() => {
-      element.addEventListener('error', _handleError);
-  
-      return () => {
-        element.removeEventListener('error', _handleError);
-      }
+        if(element) {
+            element.addEventListener('error', _handleError);
+            return () => {
+                element.removeEventListener('error', _handleError);
+            }
+        }
+      
     }, [element]);
   
     return [setElement, error, retry, element];
 };
+
+export default useImageError;

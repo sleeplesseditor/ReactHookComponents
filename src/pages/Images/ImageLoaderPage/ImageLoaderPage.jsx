@@ -40,7 +40,7 @@ const ImageLoaderPage = () => {
                 {buttons}
             </div>
             <div className="page-container-note">
-                Inspired by Alireza Valizadeh's <a className="page-note-link" target="_blank" href="https://medium.com/@alirezavalizade/rendering-images-smoothly-using-react-hooks-8cf9362263a5">article</a> 
+                Inspired by Alireza Valizadeh's <a className="page-note-link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@alirezavalizade/rendering-images-smoothly-using-react-hooks-8cf9362263a5">article</a> 
             </div>
         </div>
     )
