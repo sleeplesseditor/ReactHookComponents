@@ -7,6 +7,7 @@ import { ReactComponent as ImageIcon } from './image.svg';
 import { ReactComponent as LoadingIcon } from './loading.svg';
 import { ReactComponent as SafeStateIcon } from './safeStateIcon.svg';
 import { ReactComponent as ShortcutIcon } from './shortcutIcon.svg';
+import { ReactComponent as SizeIcon } from './sizeIcon.svg';
 import { ReactComponent as StorageIcon } from './storageIcon.svg';
 import { ReactComponent as UserIcon } from './userIcon.svg';
 
@@ -19,6 +20,7 @@ const getIcon = (icon) => {
       loadingIcon: () => <LoadingIcon/>,
       safeStateIcon: () => <SafeStateIcon/>,
       shortcutIcon: () => <ShortcutIcon/>,
+      sizeIcon: () => <SizeIcon/>,
       storageIcon: () => <StorageIcon/>,
       userIcon: () => <UserIcon/>,
       default: () => null

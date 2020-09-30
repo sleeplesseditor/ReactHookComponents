@@ -9,6 +9,7 @@ const ImageErrorPage = React.lazy(() => import('./pages/Images/ImageErrorPage/Im
 const ShortcutKeyPage = React.lazy(() => import('./pages/UserExperience/useKeyboardShortcutsPage/useKeyboardShortcutsPage'));
 const LocalStoragePage = React.lazy(() => import('./pages/UserExperience/useLocalStoragePage/useLocalStoragePage'));
 const SafeStatePage = React.lazy(() => import('./pages/Performance/useSafeStatePage/useSafeStatePage'));
+const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/useResizePage'));
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/use-shortcut-key" component={LazyLoader(ShortcutKeyPage)} />
         <Route exact path="/use-local-storage" component={LazyLoader(LocalStoragePage)} />
         <Route exact path="/use-safe-state" component={LazyLoader(SafeStatePage)} />
+        <Route exact path="/use-resize" component={LazyLoader(ResizePage)} />
       </Switch>
     </Router>
   );

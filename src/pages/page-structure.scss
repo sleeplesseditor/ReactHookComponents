@@ -5,6 +5,16 @@
     flex-direction: column;
     margin: 3rem 3rem;
 
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
     &-note {
         margin-top: 1rem;
 

@@ -43,6 +43,11 @@
                     "title": "useSafeState",
                     "icon": "safeStateIcon",
                     "link": "/use-safe-state"
+                },
+                {
+                    "title": "useResize",
+                    "icon": "sizeIcon",
+                    "link": "/use-resize"
                 }
             ]
         },
