@@ -10,7 +10,7 @@ const konamiCode = [
 	"ArrowLeft",
 	"ArrowRight",
 	"KeyB",
-	"KeyA",
+    "KeyA"
 ];
 
 export const useKonamiCode = () => {
