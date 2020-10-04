@@ -26,11 +26,12 @@ const useListAnimation = ({ children, vertical }) => {
           const firstBox = prevBoundingBox[child.key];
           const lastBox = boundingBox[child.key];
           const changeInX = firstBox.left - lastBox.left;
+          const changeInY = firstBox.top - lastBox.top;
   
-          if (changeInX) {
+          if (changeInX || changeInY) {
             requestAnimationFrame(() => {
               // Before the DOM paints, invert child to old position
-              domNode.style.transform = `${vertical ? 'translateY' : 'translateX'}(${changeInX}px)`;
+              domNode.style.transform = `${vertical ? 'translateY' : 'translateX'}(${vertical ? changeInY : changeInX}px)`;
               domNode.style.transition = "transform 0s";
   
               requestAnimationFrame(() => {

@@ -25,17 +25,30 @@ const UseListAnimationPage = () => {
         <div className="page-container">
             <h2 className="page-continer-heading">useListAnimation Hook</h2>
             <div className="circles-wrapper">
-                <div className="circles-group">
-                    <UseListAnimation>
-                        {images.map(({ id, text }) => (
-                            <Circle key={id} id={id} text={text} ref={createRef()} />
-                        ))}
-                    </UseListAnimation>
+                <div className="circles-group-container">
+                    <h4>Horizontal Animation</h4>
+                    <div className="circles-group-horizontal">
+                        <UseListAnimation>
+                            {images.map(({ id, text }) => (
+                                <Circle key={id} id={id} text={text} ref={createRef()} />
+                            ))}
+                        </UseListAnimation>
+                    </div>
                 </div>
                 <div className="button-wrapper">
                     <button className="button" onClick={reorder}>
                         Re-order images
                     </button>
+                </div>
+                <div className="circles-group-container">
+                    <h4>Vertical Animation</h4>
+                    <div className="circles-group">
+                        <UseListAnimation vertical>
+                            {images.map(({ id, text }) => (
+                                <Circle key={id} id={id} text={text} ref={createRef()} />
+                            ))}
+                        </UseListAnimation>
+                    </div>
                 </div>
             </div>
         </div>
