@@ -10,6 +10,7 @@ const ShortcutKeyPage = React.lazy(() => import('./pages/UserExperience/useKeybo
 const LocalStoragePage = React.lazy(() => import('./pages/UserExperience/useLocalStoragePage/useLocalStoragePage'));
 const SafeStatePage = React.lazy(() => import('./pages/Performance/useSafeStatePage/useSafeStatePage'));
 const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/useResizePage'));
+const ListAnimationPage = React.lazy(() => import('./pages/UserExperience/useListAnimationPage/useListAnimationPage'));
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/use-local-storage" component={LazyLoader(LocalStoragePage)} />
         <Route exact path="/use-safe-state" component={LazyLoader(SafeStatePage)} />
         <Route exact path="/use-resize" component={LazyLoader(ResizePage)} />
+        <Route exact path="/use-list-animation" component={LazyLoader(ListAnimationPage)} />
       </Switch>
     </Router>
   );

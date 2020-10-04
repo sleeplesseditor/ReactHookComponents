@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 import usePrevious from "../../usePrevious";
 import calculateBoundingBoxes from "../../Helpers/boundingBox";
 
-const useListAnimation = ({ children }) => {
+const useListAnimation = ({ children, vertical }) => {
     const [boundingBox, setBoundingBox] = useState({});
     const [prevBoundingBox, setPrevBoundingBox] = useState({});
     const prevChildren = usePrevious(children);
@@ -30,7 +30,7 @@ const useListAnimation = ({ children }) => {
           if (changeInX) {
             requestAnimationFrame(() => {
               // Before the DOM paints, invert child to old position
-              domNode.style.transform = `translateX(${changeInX}px)`;
+              domNode.style.transform = `${vertical ? 'translateY' : 'translateX'}(${changeInX}px)`;
               domNode.style.transition = "transform 0s";
   
               requestAnimationFrame(() => {
@@ -43,7 +43,7 @@ const useListAnimation = ({ children }) => {
           }
         });
       }
-    }, [boundingBox, prevBoundingBox, children]);
+    }, [boundingBox, prevBoundingBox, children, vertical]);
   
     return children;
 };
