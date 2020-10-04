@@ -11,6 +11,7 @@ const LocalStoragePage = React.lazy(() => import('./pages/UserExperience/useLoca
 const SafeStatePage = React.lazy(() => import('./pages/Performance/useSafeStatePage/useSafeStatePage'));
 const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/useResizePage'));
 const ListAnimationPage = React.lazy(() => import('./pages/UserExperience/useListAnimationPage/useListAnimationPage'));
+const SecretCodePage = React.lazy(() => import('./pages/UserExperience/useSecretCodePage/useSecretCodePage'));
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/use-safe-state" component={LazyLoader(SafeStatePage)} />
         <Route exact path="/use-resize" component={LazyLoader(ResizePage)} />
         <Route exact path="/use-list-animation" component={LazyLoader(ListAnimationPage)} />
+        <Route exact path="/use-secret-code" component={LazyLoader(SecretCodePage)} />
       </Switch>
     </Router>
   );

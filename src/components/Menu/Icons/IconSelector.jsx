@@ -4,6 +4,7 @@ import { ReactComponent as ArrowIcon } from './arrow.svg';
 import { ReactComponent as ErrorIcon } from './errorIcon.svg';
 import { ReactComponent as GaugeIcon } from './gaugeIcon.svg';
 import { ReactComponent as ImageIcon } from './image.svg';
+import { ReactComponent as KonamiLogo } from './konamiLogo.svg';
 import { ReactComponent as ListIcon } from './listIcon.svg';
 import { ReactComponent as LoadingIcon } from './loading.svg';
 import { ReactComponent as SafeStateIcon } from './safeStateIcon.svg';
@@ -18,6 +19,7 @@ const getIcon = (icon) => {
       errorIcon: () => <ErrorIcon />,
       gaugeIcon: () => <GaugeIcon />,
       imageIcon: () => <ImageIcon/>,
+      konamiIcon: () => <KonamiLogo/>,
       listIcon: () => <ListIcon />,
       loadingIcon: () => <LoadingIcon/>,
       safeStateIcon: () => <SafeStateIcon/>,
