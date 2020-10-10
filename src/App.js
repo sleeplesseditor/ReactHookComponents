@@ -13,6 +13,7 @@ const SafeStatePage = React.lazy(() => import('./pages/Performance/useSafeStateP
 const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/useResizePage'));
 const ListAnimationPage = React.lazy(() => import('./pages/UserExperience/useListAnimationPage/useListAnimationPage'));
 const SecretCodePage = React.lazy(() => import('./pages/UserExperience/useSecretCodePage/useSecretCodePage'));
+const AccordionPage = React.lazy(() => import('./pages/Components/AccordionPage/AccordionPage'));
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/use-resize" component={LazyLoader(ResizePage)} />
         <Route exact path="/use-list-animation" component={LazyLoader(ListAnimationPage)} />
         <Route exact path="/use-secret-code" component={LazyLoader(SecretCodePage)} />
+        <Route exact path="/accordion" component={LazyLoader(AccordionPage)} />
       </Switch>
     </Router>
   );

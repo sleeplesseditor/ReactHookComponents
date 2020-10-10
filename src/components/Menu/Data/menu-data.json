@@ -1,6 +1,11 @@
 {
 	"menuTitles": [
         {
+			"title": "Components",
+			"icon": "componentIcon",
+			"link": "components"
+        },
+        {
 			"title": "Image Hooks",
 			"icon": "imageIcon",
 			"link": "images"
@@ -17,6 +22,18 @@
 		}
     ],
     "subMenus": [
+        {
+            "activeMenu": "components",
+            "backIcon": "arrowIcon",
+            "menuTitle": "Components",
+            "menuLinks": [
+                {
+                    "title": "Accordion",
+                    "icon": "accordionIcon",
+                    "link": "/accordion"
+                }
+            ]
+        },
         {
             "activeMenu": "images",
             "backIcon": "arrowIcon",

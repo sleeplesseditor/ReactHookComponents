@@ -1,6 +1,8 @@
 import React from 'react';
 
+import { ReactComponent as AccordionIcon } from './accordion.svg';
 import { ReactComponent as ArrowIcon } from './arrow.svg';
+import { ReactComponent as ComponentIcon } from './componentIcon.svg';
 import { ReactComponent as ErrorIcon } from './errorIcon.svg';
 import { ReactComponent as GaugeIcon } from './gaugeIcon.svg';
 import { ReactComponent as ImageIcon } from './image.svg';
@@ -15,7 +17,9 @@ import { ReactComponent as UserIcon } from './userIcon.svg';
 
 const getIcon = (icon) => {
   const iconSelection = {
+      accordionIcon: () => <AccordionIcon/>,
       arrowIcon: () => <ArrowIcon/>,
+      componentIcon: () => <ComponentIcon/>,
       errorIcon: () => <ErrorIcon />,
       gaugeIcon: () => <GaugeIcon />,
       imageIcon: () => <ImageIcon/>,
