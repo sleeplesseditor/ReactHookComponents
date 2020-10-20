@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useEffect } from "react";
-import usePrevious from "../../usePrevious";
+import usePrevious from "../../Performance/usePrevious/usePrevious";
 import calculateBoundingBoxes from "../../Helpers/boundingBox";
 
 const useListAnimation = ({ children, vertical }) => {

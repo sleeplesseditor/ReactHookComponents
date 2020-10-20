@@ -57,6 +57,11 @@
             "menuTitle": "Performance Hooks",
             "menuLinks": [
                 {
+                    "title": "usePrevious",
+                    "icon": "previousIcon",
+                    "link": "/use-previous"
+                },
+                {
                     "title": "useSafeState",
                     "icon": "safeStateIcon",
                     "link": "/use-safe-state"

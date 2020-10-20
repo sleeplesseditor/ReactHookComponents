@@ -9,6 +9,7 @@ import { ReactComponent as ImageIcon } from './image.svg';
 import { ReactComponent as KonamiLogo } from './konamiLogo.svg';
 import { ReactComponent as ListIcon } from './listIcon.svg';
 import { ReactComponent as LoadingIcon } from './loading.svg';
+import { ReactComponent as PreviousIcon } from './previousIcon.svg';
 import { ReactComponent as SafeStateIcon } from './safeStateIcon.svg';
 import { ReactComponent as ShortcutIcon } from './shortcutIcon.svg';
 import { ReactComponent as SizeIcon } from './sizeIcon.svg';
@@ -26,6 +27,7 @@ const getIcon = (icon) => {
       konamiIcon: () => <KonamiLogo/>,
       listIcon: () => <ListIcon />,
       loadingIcon: () => <LoadingIcon/>,
+      previousIcon: () => <PreviousIcon/>,
       safeStateIcon: () => <SafeStateIcon/>,
       shortcutIcon: () => <ShortcutIcon/>,
       sizeIcon: () => <SizeIcon/>,
