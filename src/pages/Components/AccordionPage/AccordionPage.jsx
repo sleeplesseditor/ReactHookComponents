@@ -1,7 +1,9 @@
 import React from 'react';
 import Accordion from '../../../components/Accordion/Accordion';
+import {AccordionContent} from '../../../components/Accordion/AccordionContent';
 import '../../page-structure.scss';
 import './AccordionPage.scss';
+import Text from '../../../components/Accordion/Test.json';
 
 const AccordionPage = () => {
     return (
@@ -15,7 +17,7 @@ const AccordionPage = () => {
                     <span className="accordion-text">bbbbbb</span>
                 </Accordion>
                 <Accordion title="C">
-                    <span className="accordion-text">cccccc</span>
+                    <AccordionContent content={Text} />
                 </Accordion>
             </div>
         </div>
