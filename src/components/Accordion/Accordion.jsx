@@ -22,7 +22,7 @@ const Accordion = ({ children, title }) => {
   return (
     <div className="accordion-section">
       <button className="accordion-title" onClick={toogleActive}>
-        <p style={titleStyle}>{title}</p>
+        <h4 className="accordion-title-content">{title}</h4>
         <span className={active ? 'accordion-icon rotate': 'accordion-icon'}>
             <img className="accordion-icon-image" src={CaretIcon} alt="caret-icon" />
         </span>

@@ -10,15 +10,11 @@ const AccordionPage = () => {
         <div className="page-container">
             <h2 className="page-continer-heading">Accordion</h2>
             <div className="accordion-container">
-                <Accordion title="A">
-                    <span className="accordion-text">aaaaaa</span>
-                </Accordion>
-                <Accordion title="B">
-                    <span className="accordion-text">bbbbbb</span>
-                </Accordion>
-                <Accordion title="C">
-                    <AccordionContent content={Text} />
-                </Accordion>
+                {Text.map(item => (
+                    <Accordion title={item.sectionTitle}>
+                        <AccordionContent content={item} />
+                    </Accordion>
+                ))}
             </div>
         </div>
     )
