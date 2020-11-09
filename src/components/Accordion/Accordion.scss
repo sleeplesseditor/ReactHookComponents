@@ -4,8 +4,16 @@
         overflow: hidden;
         transition: max-height 0.6s ease;
 
+        &-img {
+            width: 30%;
+        }
+
         &-media {
-            p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1, img, p {
                 margin: 1rem;
             }
         }
