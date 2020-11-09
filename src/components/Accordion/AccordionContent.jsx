@@ -1,20 +1,22 @@
 import React from 'react';
 
 const getAccordionContent = (content) => {
-    console.log('HERP', content)
-    const tagSelector = {
-        paragraph: () => <p className="accordion-paragraph">{content}</p>,
-        default: () => <p>TEST</p>
+    for (const [key, value] of Object.entries(content)) {
+        const tagSelector = {
+            h1: () => <h1 className="accordion-h1">{value}</h1>,
+            paragraph: () => <p className="accordion-paragraph">{value}</p>,
+            default: () => <p>TEST</p>
+        }    
+        return (tagSelector[key] || tagSelector.default)()
     }
-
-    return (tagSelector[content] || tagSelector.default)()
 }
 
 export const AccordionContent = ({ content }) => {
-    console.log('CON', content)
-    return (
-        <div className="accordion-content-media">
-            {getAccordionContent(content)}
-        </div>
-    )
+    for (const item in content) {
+        return (
+            <div className="accordion-content-media">
+                {getAccordionContent(content)}
+            </div>
+        )
+    }
 }
