@@ -4,7 +4,8 @@ const getAccordionContent = (key, value) => {
     const tagSelector = {
         imgUpper: () => <img className="accordion-content-img" src={value} alt="JSON-image" key={key} />,
         imgLower: () => <img className="accordion-content-img" src={value} alt="JSON-image" key={key} />,
-        paragraph: () => <p className="accordion-paragraph" key={key}>{value}</p>,
+        paragraphUpper: () => <p className="accordion-paragraph" key={key}>{value}</p>,
+        paragraphLower: () => <p className="accordion-paragraph" key={key}>{value}</p>,
         default: () => null
     }    
     return (tagSelector[key] || tagSelector.default)()

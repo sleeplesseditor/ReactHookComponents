@@ -1,12 +1,18 @@
 [
     {
-        "sectionTitle": "Test Title",
+        "sectionTitle": "First Title",
         "imgUpper": "https://images.unsplash.com/photo-1573430365123-1ba5faa6b486?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus turpis a dolor vehicula posuere. Aenean sollicitudin non neque euismod facilisis. Donec et nisl eu ante suscipit aliquam. Aenean et lacinia nisl. Curabitur lobortis consectetur ultrices. Quisque aliquet ornare quam, in cursus enim blandit nec. Integer tincidunt interdum elit, dignissim lobortis tellus hendrerit et. Phasellus porta placerat augue, vel rutrum augue interdum quis. Aenean pellentesque velit mauris, quis commodo velit suscipit sed. Vestibulum volutpat convallis mauris, vel rutrum sem interdum ac. Sed id nisl lorem. Aenean blandit non quam ut mattis.",
+        "paragraphUpper": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus turpis a dolor vehicula posuere. Aenean sollicitudin non neque euismod facilisis. Donec et nisl eu ante suscipit aliquam. Aenean et lacinia nisl. Curabitur lobortis consectetur ultrices. Quisque aliquet ornare quam, in cursus enim blandit nec. Integer tincidunt interdum elit, dignissim lobortis tellus hendrerit et. Phasellus porta placerat augue, vel rutrum augue interdum quis. Aenean pellentesque velit mauris, quis commodo velit suscipit sed. Vestibulum volutpat convallis mauris, vel rutrum sem interdum ac. Sed id nisl lorem. Aenean blandit non quam ut mattis.",
         "imgLower": "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
         "sectionTitle": "Second Title",
-        "paragraph": "Phasellus at dapibus orci. Nullam iaculis ultricies malesuada. Curabitur a elementum sem, in semper sem. Ut ligula nibh, posuere id nisi at, vehicula fringilla nisl. Nunc iaculis accumsan tellus. Etiam vel egestas felis, non pretium orci. Fusce non neque sem. Donec volutpat mi sit amet urna ultrices aliquet. Integer ac sem nisl. Aenean tincidunt id diam et volutpat. Pellentesque mi sem, vestibulum nec tellus eget, interdum eleifend dui."
+        "paragraphUpper": "Phasellus at dapibus orci. Nullam iaculis ultricies malesuada. Curabitur a elementum sem, in semper sem. Ut ligula nibh, posuere id nisi at, vehicula fringilla nisl. Nunc iaculis accumsan tellus. Etiam vel egestas felis, non pretium orci. Fusce non neque sem. Donec volutpat mi sit amet urna ultrices aliquet. Integer ac sem nisl. Aenean tincidunt id diam et volutpat. Pellentesque mi sem, vestibulum nec tellus eget, interdum eleifend dui."
+    },
+    {
+        "sectionTitle": "Third Title",
+        "paragraphUpper": "Nam congue ex tellus, sollicitudin condimentum tortor placerat quis. Cras ut semper ipsum. Nulla vitae nibh id diam condimentum vulputate tristique et nulla. Ut ut ultricies neque, id hendrerit urna. Phasellus sit amet erat at turpis ultrices sollicitudin. Phasellus metus massa, varius in pharetra ullamcorper, luctus eu neque. Fusce vehicula, sapien in dictum convallis, est libero tempus nisl, at posuere tortor mauris sed urna. Duis nec velit eleifend, hendrerit ipsum non, semper lorem. Phasellus viverra eu purus et dapibus. Aenean ut lacinia purus. Donec scelerisque est velit, eget feugiat mauris euismod eget. Suspendisse id risus purus. Praesent pretium eu turpis et tincidunt. Quisque viverra urna sed quam ullamcorper dapibus. Praesent id purus ante. Ut pulvinar risus velit, in accumsan sem aliquam sagittis..",
+        "imgUpper": "https://images.unsplash.com/photo-1572724013549-0f11f2a52657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+        "paragraphLower": "Vestibulum quis ante laoreet, interdum sapien in, ultrices ipsum. Vivamus ut volutpat enim. Donec venenatis ipsum ac venenatis laoreet. Nunc quis nunc accumsan, posuere ex vel, convallis mauris. Maecenas a lorem nibh. Sed tempor, quam rutrum tempor ullamcorper, sem massa posuere libero, sed luctus quam dolor id felis. Sed consectetur dui vitae lorem lobortis, ac laoreet ex posuere. Sed consectetur mi id ante consectetur, in rhoncus eros scelerisque."
     }
 ]
