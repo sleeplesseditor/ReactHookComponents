@@ -1,8 +1,9 @@
 [
     {
         "sectionTitle": "Test Title",
+        "imgUpper": "https://images.unsplash.com/photo-1573430365123-1ba5faa6b486?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus turpis a dolor vehicula posuere. Aenean sollicitudin non neque euismod facilisis. Donec et nisl eu ante suscipit aliquam. Aenean et lacinia nisl. Curabitur lobortis consectetur ultrices. Quisque aliquet ornare quam, in cursus enim blandit nec. Integer tincidunt interdum elit, dignissim lobortis tellus hendrerit et. Phasellus porta placerat augue, vel rutrum augue interdum quis. Aenean pellentesque velit mauris, quis commodo velit suscipit sed. Vestibulum volutpat convallis mauris, vel rutrum sem interdum ac. Sed id nisl lorem. Aenean blandit non quam ut mattis.",
-        "img": "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+        "imgLower": "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
         "sectionTitle": "Second Title",

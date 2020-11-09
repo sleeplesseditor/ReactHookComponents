@@ -2,8 +2,8 @@ import React from 'react';
 
 const getAccordionContent = (key, value) => {
     const tagSelector = {
-        // h1: () => <h1 className="accordion-h1" key={key}>{value}</h1>,
-        img: () => <img className="accordion-content-img" src={value} alt="JSON-image" key={key} />,
+        imgUpper: () => <img className="accordion-content-img" src={value} alt="JSON-image" key={key} />,
+        imgLower: () => <img className="accordion-content-img" src={value} alt="JSON-image" key={key} />,
         paragraph: () => <p className="accordion-paragraph" key={key}>{value}</p>,
         default: () => null
     }    
