@@ -14,11 +14,6 @@ const Accordion = ({ children, title }) => {
     setActive(!active)
   }
 
-  const titleStyle = {
-    fontWeight: 600,
-    fontSize: '14px',
-  }
-
   return (
     <div className="accordion-section">
       <button className="accordion-title" onClick={toogleActive}>
