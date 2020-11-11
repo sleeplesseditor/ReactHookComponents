@@ -19,7 +19,7 @@ const SidePanelPage = () => {
             </div>
             <div className="page-panel-container" ref={node}>
                 <button className="panel-btn" onClick={() => setOpen(!open)}>Open</button>
-                <SidePanel open={open} setOpen={setOpen}>
+                <SidePanel open={open} setOpen={setOpen} orientation="left">
                     {Text.map(item => (
                         <Accordion key={item.sectionTitle} title={item.sectionTitle}>
                             <AccordionContent content={item} />
