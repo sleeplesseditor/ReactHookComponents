@@ -11,7 +11,7 @@ const AccordionPage = () => {
             <h2 className="page-continer-heading">Accordion</h2>
             <div className="accordion-container">
                 {Text.map(item => (
-                    <Accordion title={item.sectionTitle}>
+                    <Accordion key={item.sectionTitle} title={item.sectionTitle}>
                         <AccordionContent content={item} />
                     </Accordion>
                 ))}
