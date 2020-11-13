@@ -11,10 +11,14 @@ import Text from '../../../components/Accordion/Test.json';
 const SidePanelPage = () => {
     const [leftOpen, setLeftOpen] = useState(false);
     const [rightOpen, setRightOpen] = useState(false);
+    const [upperOpen, setUpperOpen] = useState(false);
+    const [lowerOpen, setLowerOpen] = useState(false);
     const node = useRef();
     const closeAll = () => {
         setLeftOpen(false);
         setRightOpen(false);
+        setUpperOpen(false);
+        setLowerOpen(false);
     }
     useOnClickOutside(node, () => closeAll());
 
@@ -26,6 +30,8 @@ const SidePanelPage = () => {
                 <div className="page-button-container">
                     <button className="panel-btn" onClick={() => setLeftOpen(!leftOpen)} disabled={leftOpen}>Open Left Panel</button>
                     <button className="panel-btn" onClick={() => setRightOpen(!rightOpen)} disabled={rightOpen}>Open Right Panel</button>
+                    <button className="panel-btn" onClick={() => setUpperOpen(!upperOpen)} disabled={upperOpen}>Open Upper Panel</button>
+                    <button className="panel-btn" onClick={() => setLowerOpen(!lowerOpen)} disabled={lowerOpen}>Open Lower Panel</button>
                 </div>
             </div>
             <div className="page-panel-container" ref={node}>
@@ -42,6 +48,12 @@ const SidePanelPage = () => {
                             <AccordionContent content={item} />
                         </Accordion>
                     ))}
+                </SidePanel>
+                <SidePanel open={upperOpen} setOpen={setUpperOpen} orientation="upper">
+                    UPPER CONTENT
+                </SidePanel>
+                <SidePanel open={lowerOpen} setOpen={setLowerOpen} orientation="lower">
+                    LOWER CONTENT
                 </SidePanel>
             </div>
         </>
