@@ -9,10 +9,12 @@
     transition: transform 0.3s ease-in-out;
     background: #EFFFFA;
     z-index: 10;
+    overflow-y: auto;
 
     &.left {
         left: 0;
         transform: translateX(-100%);
+        box-shadow: 5px 15px 5px 5px rgba(0,0,0,0.49);
 
         &.open {
             transform: translateX(0);
@@ -22,9 +24,10 @@
     &.right {
         right: 0;
         transform: translateX(100%);
+        box-shadow: 5px 5px 5px 15px rgba(0,0,0,0.49);
 
         &.open {
-            transform: translateX(-15%);
+            transform: translateX(-17%);
         }
     }
 
@@ -32,14 +35,15 @@
     &.right {
         top: 5%;
         max-width: 25%;
-        height: 87.5%;
-        overflow-y: auto;
-        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
+        height: 100%;
+        // Adjust for presence of pre-existing navbar
+        padding-top: 3rem;
     }
 
     &.lower {
         bottom: 0;
         transform: translateY(100%);
+        box-shadow: 15px 5px 5px 5px rgba(0,0,0,0.49);
 
         &.open {
             transform: translateY(0%);
@@ -49,6 +53,7 @@
     &.upper {
         top: 0;
         transform: translateY(-100%);
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
 
         &.open {
             transform: translateY(25%);
