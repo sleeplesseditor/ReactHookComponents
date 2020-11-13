@@ -33,11 +33,11 @@
 
     &.left,
     &.right {
-        top: 5%;
+        top: 0;
         max-width: 25%;
         height: 100%;
         // Adjust for presence of pre-existing navbar
-        padding-top: 3rem;
+        padding-top: 5rem;
     }
 
     &.lower {

@@ -50,10 +50,22 @@ const SidePanelPage = () => {
                     ))}
                 </SidePanel>
                 <SidePanel open={upperOpen} setOpen={setUpperOpen} orientation="upper">
-                    UPPER CONTENT
+                    <div className="horizontal-example-container">
+                        {Text.map(item => (
+                            <div key={item.sectionTitle} className="horizontal-example">
+                                {item.sectionTitle}
+                            </div>
+                        ))}
+                    </div>
                 </SidePanel>
                 <SidePanel open={lowerOpen} setOpen={setLowerOpen} orientation="lower">
-                    LOWER CONTENT
+                    <div className="horizontal-example-container">
+                        {Text.map(item => (
+                            <div key={item.sectionTitle} className="horizontal-example">
+                                {item.sectionTitle}
+                            </div>
+                        ))}
+                    </div>
                 </SidePanel>
             </div>
         </>
