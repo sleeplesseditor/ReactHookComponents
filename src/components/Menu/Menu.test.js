@@ -99,7 +99,7 @@ describe('Menu', () => {
         const menuItem = menuComponent.find('.menu-item').first();
         menuItem.simulate('click');
         const secondaryMenu = menuComponent.find('.menu-item');
-        expect(secondaryMenu).toHaveLength(6);
+        expect(secondaryMenu).toHaveLength(8);
     })
 
     it('renders a minimum of one sub menu item', () => {
