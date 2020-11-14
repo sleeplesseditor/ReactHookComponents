@@ -14,6 +14,7 @@ const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/us
 const ListAnimationPage = React.lazy(() => import('./pages/UserExperience/useListAnimationPage/useListAnimationPage'));
 const SecretCodePage = React.lazy(() => import('./pages/UserExperience/useSecretCodePage/useSecretCodePage'));
 const AccordionPage = React.lazy(() => import('./pages/Components/AccordionPage/AccordionPage'));
+const ModalPage = React.lazy(() => import('./pages/Components/ModalPage/ModalPage'));
 const SidePanelPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelPage'));
 const PreviousPage = React.lazy(() => import('./pages/Performance/usePreviousPage/usePreviousPage'));
 
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/use-list-animation" component={LazyLoader(ListAnimationPage)} />
         <Route exact path="/use-secret-code" component={LazyLoader(SecretCodePage)} />
         <Route exact path="/accordion" component={LazyLoader(AccordionPage)} />
+        <Route exact path="/modal" component={LazyLoader(ModalPage)} />
         <Route exact path="/side-panel" component={LazyLoader(SidePanelPage)} />
         <Route exact path="/use-previous" component={LazyLoader(PreviousPage)} />
       </Switch>

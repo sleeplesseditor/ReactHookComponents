@@ -33,6 +33,11 @@
                     "link": "/accordion"
                 },
                 {
+                    "title": "Modal",
+                    "icon": "modalIcon",
+                    "link": "/modal"
+                },
+                {
                     "title": "Side Panel",
                     "icon": "sidePanelIcon",
                     "link": "/side-panel"
