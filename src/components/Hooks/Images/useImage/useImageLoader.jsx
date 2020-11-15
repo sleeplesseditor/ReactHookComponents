@@ -4,7 +4,7 @@ import useImage from './useImage';
 
 const UseImageLoader = ({ src, alt = "" }) => {
     const { loaded } = useImage({ src });
-    return <img className={`smooth ${loaded ? 'loaded' : ''}`} src={src} alt={alt} />;
+    return <img className={`smooth ${loaded ? 'loaded' : ''}`} src={src} alt="" />;
 };
 
 export default UseImageLoader;

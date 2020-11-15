@@ -14,7 +14,7 @@ const useImageGallery = () => {
     return {
       buttons: srcs.map((src, i) => (
         <button
-          className={`${{ active: src === selectedSrc }}`}
+          className={`image-btn ${{ active: src === selectedSrc }}`}
           onClick={() => setSrc(src)}
           key={src}
         >
