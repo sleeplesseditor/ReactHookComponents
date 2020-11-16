@@ -5,6 +5,7 @@
     flex-direction: column;
     margin: 3rem 3rem;
     width: 100vw;
+    overflow-y: scroll;
 
     &-content {
         display: flex;
