@@ -14,6 +14,8 @@ const Accordion = ({ children, title }) => {
     setActive(!active)
   }
 
+  // NEXT AND PREVIOUS OPEN BUTTONS
+
   return (
     <div className="accordion-section">
       <button className="accordion-title" onClick={toogleActive}>
