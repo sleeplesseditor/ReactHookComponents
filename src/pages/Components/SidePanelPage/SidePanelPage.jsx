@@ -4,8 +4,6 @@ import './SidePanelPage.scss';
 import { useOnClickOutside } from '../../../components/Hooks/Helpers/useOnClickOutside';
 import SidePanel from '../../../components/SidePanel/SidePanel';
 
-import Accordion from '../../../components/Accordion/Accordion';
-import {AccordionContent} from '../../../components/Accordion/AccordionContent';
 import Text from '../../../components/Accordion/Test.json';
 
 const SidePanelPage = () => {
@@ -36,18 +34,10 @@ const SidePanelPage = () => {
             </div>
             <div className="page-panel-container" ref={node}>
                 <SidePanel open={leftOpen} setOpen={setLeftOpen} orientation="left">
-                    {Text.map(item => (
-                        <Accordion key={item.sectionTitle} title={item.sectionTitle}>
-                            <AccordionContent content={item} />
-                        </Accordion>
-                    ))}
+                    
                 </SidePanel>
                 <SidePanel open={rightOpen} setOpen={setRightOpen} orientation="right">
-                    {Text.map(item => (
-                        <Accordion key={item.sectionTitle} title={item.sectionTitle}>
-                            <AccordionContent content={item} />
-                        </Accordion>
-                    ))}
+                    
                 </SidePanel>
                 <SidePanel open={upperOpen} setOpen={setUpperOpen} orientation="upper">
                     <div className="horizontal-example-container">

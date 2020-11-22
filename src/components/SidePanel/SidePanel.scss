@@ -27,7 +27,7 @@
         box-shadow: 5px 5px 5px 15px rgba(0,0,0,0.49);
 
         &.open {
-            transform: translateX(-17%);
+            transform: translateX(-100%);
         }
     }
 
@@ -35,7 +35,7 @@
     &.right {
         top: 0;
         max-width: 25%;
-        height: 100%;
+        height: -webkit-fill-available;
         // Adjust for presence of pre-existing navbar
         padding-top: 5rem;
     }
@@ -46,7 +46,7 @@
         box-shadow: 15px 5px 5px 5px rgba(0,0,0,0.49);
 
         &.open {
-            transform: translateY(0%);
+            transform: translateY(-20%);
         }
     }
 
@@ -56,7 +56,7 @@
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
 
         &.open {
-            transform: translateY(25%);
+            transform: translateY(20%);
         }
     }
 

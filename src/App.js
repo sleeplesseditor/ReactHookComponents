@@ -16,6 +16,7 @@ const SecretCodePage = React.lazy(() => import('./pages/UserExperience/useSecret
 const AccordionPage = React.lazy(() => import('./pages/Components/AccordionPage/AccordionPage'));
 const ModalPage = React.lazy(() => import('./pages/Components/ModalPage/ModalPage'));
 const SidePanelPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelPage'));
+const SidePanelAccordionPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelAccordionPage'));
 const PreviousPage = React.lazy(() => import('./pages/Performance/usePreviousPage/usePreviousPage'));
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/accordion" component={LazyLoader(AccordionPage)} />
         <Route exact path="/modal" component={LazyLoader(ModalPage)} />
         <Route exact path="/side-panel" component={LazyLoader(SidePanelPage)} />
+        <Route exact path="/side-panel-accordions" component={LazyLoader(SidePanelAccordionPage)} />
         <Route exact path="/use-previous" component={LazyLoader(PreviousPage)} />
       </Switch>
     </Router>

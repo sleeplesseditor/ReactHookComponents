@@ -1,0 +1,14 @@
+html {
+    position: static !important;
+}
+ 
+.page-container {
+    width: 95% !important;
+    overflow: hidden !important;
+}
+
+.page-button-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}

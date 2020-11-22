@@ -41,6 +41,11 @@
                     "title": "Side Panel",
                     "icon": "sidePanelIcon",
                     "link": "/side-panel"
+                },
+                {
+                    "title": "Side Panel Accordions",
+                    "icon": "sidePanelIcon",
+                    "link": "/side-panel-accordions"
                 }
             ]
         },
