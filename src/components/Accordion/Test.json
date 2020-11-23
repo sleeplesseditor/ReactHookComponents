@@ -3,11 +3,19 @@
         "sectionTitle": "First Title",
         "imgUpper": "https://images.unsplash.com/photo-1573430365123-1ba5faa6b486?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
         "paragraphUpper": "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. <i>Donec rhoncus turpis a dolor vehicula posuere</i>. Aenean sollicitudin non neque euismod facilisis. <a href=`http://google.co.uk`>Donec et nisl eu ante suscipit aliquam</a>. Aenean et lacinia nisl. Curabitur lobortis consectetur ultrices <img src=x onerror=alert(1)//>. Quisque aliquet ornare quam, in cursus enim blandit nec. Integer tincidunt interdum elit, dignissim lobortis tellus hendrerit et. Phasellus porta placerat augue, vel rutrum augue interdum quis. Aenean pellentesque velit mauris, quis commodo velit suscipit sed. Vestibulum volutpat convallis mauris, vel rutrum sem interdum ac. Sed id nisl lorem. Aenean blandit non quam ut mattis.",
-        "imgLower": "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+        "imgLower": "https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
+        "paragraph0": "Vestibulum quis ante laoreet, interdum sapien in, ultrices ipsum. Vivamus ut volutpat enim. Donec venenatis ipsum ac venenatis laoreet.",
+        "paragraph1": "Vestibulum quis ante laoreet, interdum sapien in, ultrices ipsum. Vivamus ut volutpat enim. Donec venenatis ipsum ac venenatis laoreet."
+    
     },
     {
         "sectionTitle": "Second Title",
-        "paragraphUpper": "Phasellus at dapibus orci. Nullam iaculis ultricies malesuada <svg><g/onload=alert(2)//</g></svg>. Curabitur a elementum sem, in semper sem. Ut ligula nibh, posuere id nisi at, vehicula fringilla nisl. Nunc iaculis accumsan tellus. Etiam vel egestas felis, non pretium orci. Fusce non neque sem. Donec volutpat mi sit amet urna ultrices aliquet. Integer ac sem nisl. Aenean tincidunt id diam et volutpat. Pellentesque mi sem, vestibulum nec tellus eget, interdum eleifend dui."
+        "content": "<p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. <i>Donec rhoncus turpis a dolor vehicula posuere</i>. Aenean sollicitudin non neque euismod facilisis. <a href=`http://google.co.uk`>Donec et nisl eu ante suscipit aliquam</a>.</p> <img class='accordion-content-img' src='https://images.unsplash.com/photo-1498462440456-0dba182e775b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80' alt='' /> <p>Aenean et lacinia nisl. Curabitur lobortis consectetur ultrices <img src=x onerror=alert(1)//>. Quisque aliquet ornare quam, in cursus enim blandit nec. Integer tincidunt interdum elit, dignissim lobortis tellus hendrerit et. Phasellus porta placerat augue, vel rutrum augue interdum quis.</p> <p>Aenean pellentesque velit mauris, quis commodo velit suscipit sed. Vestibulum volutpat convallis mauris, vel rutrum sem interdum ac. Sed id nisl lorem. Aenean blandit non quam ut mattis.</p>",
+        "table": [
+            {
+                
+            }
+        ]
     },
     {
         "sectionTitle": "Third Title",

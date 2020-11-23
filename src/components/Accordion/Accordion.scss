@@ -9,12 +9,32 @@
         }
 
         &-media {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
 
-            h1, img, p {
-                margin: 1rem;
+            // h1, img, p {
+            //     margin: 1rem;
+            // }
+        }
+        
+        &-paragraph {
+            &-content {
+                h1, img, p {
+                    margin: 1rem;
+                }
+
+                a {
+                    color: red;
+                }
+
+                img {
+                    width: 30%
+                }
+
+                p {
+                    margin-top: 1rem;
+                }
             }
         }
     }
