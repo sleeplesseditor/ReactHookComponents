@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import CaretIcon from '../Menu/Icons/caret.png';
 import './Accordion.scss';
 
-const Accordion = ({ children, title }) => {
+const Accordion = ({ children, index, title }) => {
   const [active, setActive] = useState(false)
   const contentRef = useRef(null)
 
@@ -15,6 +15,8 @@ const Accordion = ({ children, title }) => {
   }
 
   // NEXT AND PREVIOUS OPEN BUTTONS
+
+  console.log('INDEX', index)
 
   return (
     <div className="accordion-section">
@@ -30,6 +32,7 @@ const Accordion = ({ children, title }) => {
         className="accordion-content"
       >
         {children}
+        {index === 0 ? <p>INDEX IS {index}</p> : null}
       </div>
     </div>
   )
