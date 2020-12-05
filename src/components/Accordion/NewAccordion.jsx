@@ -5,26 +5,27 @@ import './Accordion.scss';
 const NewAccordion = ({ allowMultipleOpen, children }) => {
     const [openSections, setOpenSections] = useState({})
 
-    const onClick = label => {
-        const isOpen = !!openSections[label];
+    const onClick = index => {
+        const isOpen = !!openSections[index];
 
         if (allowMultipleOpen) {
             setOpenSections({
                 ...openSections,
-                [label]: !isOpen
+                [index]: !isOpen
             })
         } else {
             setOpenSections({
-                [label]: !isOpen
+                [index]: !isOpen
             })
         }
     };
 
     return (
         <div className="accordion-section">
-            {children.map(child => (
+            {children.map((child, index) => (
                 <NewAccordionSection
-                    isOpen={!!openSections[child.props.label]}
+                    index={index}
+                    isOpen={!!openSections[index]}
                     key={child.props.label}
                     label={child.props.label}
                     onClick={onClick}
