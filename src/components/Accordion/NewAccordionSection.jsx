@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import './Accordion.scss';
 
-const NewAccordionSection = ({ children, index, isOpen, label, onClick }) => {
+const NewAccordionSection = ({ children, finalIndex, index, isOpen, label, onClick }) => {
 
   const contentRef = useRef(null)
 
@@ -34,7 +34,7 @@ const NewAccordionSection = ({ children, index, isOpen, label, onClick }) => {
             {children}
             <span>
             {index !== 0 ? <button onClick={previousOpen}>Previous</button> : null}
-            <button onClick={nextOpen}>Next</button>
+            {index !== finalIndex ? <button onClick={nextOpen}>Next</button> : <button>Finish</button>}
             </span>
           </div>
       </div>

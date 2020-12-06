@@ -20,10 +20,14 @@ const NewAccordion = ({ allowMultipleOpen, children }) => {
         }
     };
 
+    const finalIndex = children.length -1;
+
     return (
         <div className="accordion-section">
+            {console.log('INDEX', children.length)}
             {children.map((child, index) => (
                 <NewAccordionSection
+                    finalIndex={finalIndex}
                     index={index}
                     isOpen={!!openSections[index]}
                     key={child.props.label}
