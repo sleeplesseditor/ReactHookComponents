@@ -33,8 +33,8 @@ const NewAccordionSection = ({ children, finalIndex, index, isOpen, label, onCli
           <div ref={contentRef} className="accordion-content">
             {children}
             <span>
-            {index !== 0 ? <button onClick={previousOpen}>Previous</button> : null}
-            {index !== finalIndex ? <button onClick={nextOpen}>Next</button> : <button>Finish</button>}
+            {index !== 0 ? <button className="accordion-btn" onClick={previousOpen}>Previous</button> : null}
+            {index !== finalIndex ? <button className="accordion-btn" onClick={nextOpen}>Next</button> : <button className="accordion-btn">Finish</button>}
             </span>
           </div>
       </div>

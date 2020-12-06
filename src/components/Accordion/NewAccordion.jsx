@@ -24,7 +24,6 @@ const NewAccordion = ({ allowMultipleOpen, children }) => {
 
     return (
         <div className="accordion-section">
-            {console.log('INDEX', children.length)}
             {children.map((child, index) => (
                 <NewAccordionSection
                     finalIndex={finalIndex}
