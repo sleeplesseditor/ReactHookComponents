@@ -18,6 +18,7 @@ const ModalPage = React.lazy(() => import('./pages/Components/ModalPage/ModalPag
 const SidePanelPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelPage'));
 const SidePanelAccordionPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelAccordionPage'));
 const PreviousPage = React.lazy(() => import('./pages/Performance/usePreviousPage/usePreviousPage'));
+const SortableListPage = React.lazy(() => import('./pages/Components/SortableListPage/SortableListPage'));
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route exact path="/side-panel" component={LazyLoader(SidePanelPage)} />
         <Route exact path="/side-panel-accordions" component={LazyLoader(SidePanelAccordionPage)} />
         <Route exact path="/use-previous" component={LazyLoader(PreviousPage)} />
+        <Route exact path="/sortable-list" component={LazyLoader(SortableListPage)} />
       </Switch>
     </Router>
   );
