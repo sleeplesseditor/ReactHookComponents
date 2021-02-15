@@ -17,6 +17,7 @@ import { ReactComponent as SidePanelIcon } from './sidePanelIcon.svg';
 import { ReactComponent as SizeIcon } from './sizeIcon.svg';
 import { ReactComponent as SortableListIcon } from './sortableList.svg';
 import { ReactComponent as StorageIcon } from './storageIcon.svg';
+import { ReactComponent as TabsIcon } from './tabs.svg';
 import { ReactComponent as UserIcon } from './userIcon.svg';
 
 const getIcon = (icon) => {
@@ -38,6 +39,7 @@ const getIcon = (icon) => {
       sizeIcon: () => <SizeIcon/>,
       sortableList: () => <SortableListIcon />,
       storageIcon: () => <StorageIcon/>,
+      tabsIcon: () => <TabsIcon/>,
       userIcon: () => <UserIcon/>,
       default: () => null
   }

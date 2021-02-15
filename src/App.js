@@ -14,6 +14,7 @@ const ResizePage = React.lazy(() => import('./pages/Performance/useResizePage/us
 const ListAnimationPage = React.lazy(() => import('./pages/UserExperience/useListAnimationPage/useListAnimationPage'));
 const SecretCodePage = React.lazy(() => import('./pages/UserExperience/useSecretCodePage/useSecretCodePage'));
 const AccordionPage = React.lazy(() => import('./pages/Components/AccordionPage/AccordionPage'));
+const TabsPage = React.lazy(() => import('./pages/Components/TabsPage/TabsPage'));
 const ModalPage = React.lazy(() => import('./pages/Components/ModalPage/ModalPage'));
 const SidePanelPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelPage'));
 const SidePanelAccordionPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelAccordionPage'));
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/use-list-animation" component={LazyLoader(ListAnimationPage)} />
         <Route exact path="/use-secret-code" component={LazyLoader(SecretCodePage)} />
         <Route exact path="/accordion" component={LazyLoader(AccordionPage)} />
+        <Route exact path="/tabs" component={LazyLoader(TabsPage)} />
         <Route exact path="/modal" component={LazyLoader(ModalPage)} />
         <Route exact path="/side-panel" component={LazyLoader(SidePanelPage)} />
         <Route exact path="/side-panel-accordions" component={LazyLoader(SidePanelAccordionPage)} />

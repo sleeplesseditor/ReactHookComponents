@@ -51,6 +51,11 @@
                     "title": "Sortable List",
                     "icon": "sortableList",
                     "link": "/sortable-list"
+                },
+                {
+                    "title": "Tabs",
+                    "icon": "sortableList",
+                    "link": "/tabs"
                 }
             ]
         },
