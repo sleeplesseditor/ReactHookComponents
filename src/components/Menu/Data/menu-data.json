@@ -54,7 +54,7 @@
                 },
                 {
                     "title": "Tabs",
-                    "icon": "sortableList",
+                    "icon": "tabsIcon",
                     "link": "/tabs"
                 }
             ]
