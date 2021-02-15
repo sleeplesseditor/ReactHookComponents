@@ -3,9 +3,9 @@ import './Tabs.scss';
 
 const Tab = (props) => {
     return (
-        <button className={props.active ? 'tabs-button-active' : 'tabs-button'} onClick={props.onClick} id={props.id}>
+        <div className={props.active ? 'tabs-button-active' : 'tabs-button'} onClick={props.onClick} id={props.id}>
             {props.children}
-        </button>
+        </div>
     )
 }
 
