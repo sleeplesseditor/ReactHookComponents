@@ -20,6 +20,7 @@ const SidePanelPage = React.lazy(() => import('./pages/Components/SidePanelPage/
 const SidePanelAccordionPage = React.lazy(() => import('./pages/Components/SidePanelPage/SidePanelAccordionPage'));
 const PreviousPage = React.lazy(() => import('./pages/Performance/usePreviousPage/usePreviousPage'));
 const SortableListPage = React.lazy(() => import('./pages/Components/SortableListPage/SortableListPage'));
+const PaginationPage = React.lazy(() => import('./pages/Components/PaginationPage/PaginationPage'));
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/use-secret-code" component={LazyLoader(SecretCodePage)} />
         <Route exact path="/accordion" component={LazyLoader(AccordionPage)} />
         <Route exact path="/tabs" component={LazyLoader(TabsPage)} />
+        <Route exact path="/pagination" component={LazyLoader(PaginationPage)} />
         <Route exact path="/modal" component={LazyLoader(ModalPage)} />
         <Route exact path="/side-panel" component={LazyLoader(SidePanelPage)} />
         <Route exact path="/side-panel-accordions" component={LazyLoader(SidePanelAccordionPage)} />

@@ -38,6 +38,11 @@
                     "link": "/modal"
                 },
                 {
+                    "title": "Pagination",
+                    "icon": "pagesIcon",
+                    "link": "/pagination"
+                },
+                {
                     "title": "Side Panel",
                     "icon": "sidePanelIcon",
                     "link": "/side-panel"
