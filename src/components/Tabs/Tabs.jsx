@@ -16,10 +16,10 @@ const Tab = ({ active, children, className, id, onClick }) => {
     )
 }
 
-const Tabs = (props) => {
+const Tabs = ({ children, className }) => {
     return (
-        <div className="tabs-container">
-            {props.children}
+        <div className={`${className}-container`}>
+            {children}
         </div>
     )
 }

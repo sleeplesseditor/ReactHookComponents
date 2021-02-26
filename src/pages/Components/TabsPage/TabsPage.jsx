@@ -22,14 +22,14 @@ const TabsPage = () => {
             <h2 className="page-continer-heading">Tabs</h2>
             <div className="tabular-container">
                 <div className="tab-holder">
-                    <Tabs>
+                    <Tabs className="tabs">
                         <Tab className="tabs-button"  onClick={handleClick} active={active === 0} id={0}>
-                            <img className="tabs-button-image" src={TabsIcon} onClick={handleClick} id={0} alt="" />
+                            <img className="tabs-button-image" src={TabsIcon} alt="" />
                             Content 1
                         </Tab>
 
                         <Tab className="tabs-button" onClick={handleClick} active={active === 1} id={1}>
-                            <img className="tabs-button-image" src={UserIcon} onClick={handleClick} id={1} alt="" />
+                            <img className="tabs-button-image" src={UserIcon} alt="" />
                             Content 2
                         </Tab>
                     </Tabs>
