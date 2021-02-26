@@ -1,10 +1,17 @@
 import * as React from 'react';
 import './Tabs.scss';
 
-const Tab = (props) => {
+const Tab = ({ active, children, className, id, onClick }) => {
+    const childrenWithProps =  React.Children.map(children, child => {
+        if(React.isValidElement(children)) {
+            return React.cloneElement(child, {id, onClick});
+        }
+            return child;  
+    })
+
     return (
-        <div className={props.active ? 'tabs-button-active' : 'tabs-button'} onClick={props.onClick} id={props.id}>
-            {props.children}
+        <div className={active ? `${className}-active` : className} onClick={onClick} id={id}>
+            {childrenWithProps}
         </div>
     )
 }
