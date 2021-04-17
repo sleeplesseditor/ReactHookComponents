@@ -21,6 +21,7 @@ const SidePanelAccordionPage = React.lazy(() => import('./pages/Components/SideP
 const PreviousPage = React.lazy(() => import('./pages/Performance/usePreviousPage/usePreviousPage'));
 const SortableListPage = React.lazy(() => import('./pages/Components/SortableListPage/SortableListPage'));
 const PaginationPage = React.lazy(() => import('./pages/Components/PaginationPage/PaginationPage'));
+const FolderTreePage = React.lazy(() => import('./pages/Components/FolderTreePage/FolderTreePage'));
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route exact path="/side-panel-accordions" component={LazyLoader(SidePanelAccordionPage)} />
         <Route exact path="/use-previous" component={LazyLoader(PreviousPage)} />
         <Route exact path="/sortable-list" component={LazyLoader(SortableListPage)} />
+        <Route exact path="/folder-tree" component={LazyLoader(FolderTreePage)} />
       </Switch>
     </Router>
   );

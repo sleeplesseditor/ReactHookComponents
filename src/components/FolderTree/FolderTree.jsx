@@ -29,12 +29,17 @@ const Folder = ({ name, children }) => {
     };
 
     return (
-        <div className="tree-folder">
-
+        <div className="tree-folder" onClick={handleToggle}>
+            <AiOutlineFolder />
+            <span>{name}</span>
         </div>
     )
 };
 
 const Tree = ({ children }) => {
-    return <div className="tree-main">{children}]</div>
+    return <div className="tree-main">{children}</div>
+}
+
+export { 
+    Tree
 }

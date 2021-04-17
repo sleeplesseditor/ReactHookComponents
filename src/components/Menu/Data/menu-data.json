@@ -33,6 +33,11 @@
                     "link": "/accordion"
                 },
                 {
+                    "title": "Folder Tree",
+                    "icon": "treeIcon",
+                    "link": "/folder-tree"
+                },
+                {
                     "title": "Modal",
                     "icon": "modalIcon",
                     "link": "/modal"

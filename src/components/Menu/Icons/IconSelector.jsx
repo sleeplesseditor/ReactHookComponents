@@ -4,6 +4,7 @@ import { ReactComponent as AccordionIcon } from './accordion.svg';
 import { ReactComponent as ArrowIcon } from './arrow.svg';
 import { ReactComponent as ComponentIcon } from './componentIcon.svg';
 import { ReactComponent as ErrorIcon } from './errorIcon.svg';
+import { ReactComponent as FolderIcon } from './tree.svg';
 import { ReactComponent as GaugeIcon } from './gaugeIcon.svg';
 import { ReactComponent as ImageIcon } from './image.svg';
 import { ReactComponent as KonamiLogo } from './konamiLogo.svg';
@@ -42,6 +43,7 @@ const getIcon = (icon) => {
       sortableList: () => <SortableListIcon />,
       storageIcon: () => <StorageIcon/>,
       tabsIcon: () => <TabsIcon/>,
+      treeIcon: () => <FolderIcon />,
       userIcon: () => <UserIcon/>,
       default: () => null
   }
