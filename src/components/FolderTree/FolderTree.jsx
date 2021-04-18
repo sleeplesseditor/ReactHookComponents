@@ -10,6 +10,12 @@ const FILE_ICONS = {
     jsx: <DiReact />
 };
 
+const Collapsible = ({ isOpen }) => {
+    return (
+        <div className="tree-collapsible" style={{ height: `${isOpen ? '0' : 'auto'}`}}>{}</div>
+    )
+}
+
 const File = ({ name }) => {
     let ext = name.split(".")[1];
 
@@ -29,9 +35,12 @@ const Folder = ({ name, children }) => {
     };
 
     return (
-        <div className="tree-folder" onClick={handleToggle}>
-            <AiOutlineFolder />
-            <span>{name}</span>
+        <div className="tree-folder">
+            <div className="folder--label" onClick={handleToggle}>
+                <AiOutlineFolder />
+                <span>{name}</span>
+            </div>
+            <Collapsible isOpen={isOpen}>{children}</Collapsible>
         </div>
     )
 };

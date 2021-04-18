@@ -1,4 +1,8 @@
 .tree {
+    &-collapsible {
+        overflow: hidden;
+    }
+
     &-file {
         padding-left: 20px;
         display: flex;
