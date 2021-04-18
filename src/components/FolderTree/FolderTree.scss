@@ -1,14 +1,14 @@
 .tree {
     &-collapsible {
-        transition: max-height 0.15s ease-out;
-
         &-closed {
             max-height: 0;
             overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
         }
 
         &-open {
             max-height: 500px;
+            transition: max-height 0.5s ease-in-out;
         }
     }
 

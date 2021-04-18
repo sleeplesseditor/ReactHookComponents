@@ -1,5 +1,12 @@
 [
     {
+        "type": "folder",
+        "name": "public",
+        "childrens": [
+            { "type": "file", "name": "index.html" }
+        ]
+    },
+    {
       "type": "folder",
       "name": "src",
       "childrens": [
@@ -7,12 +14,12 @@
           "type": "folder",
           "name": "Components",
           "childrens": [
-            { "type": "file", "name": "Modal.jsx" },
-            { "type": "file", "name": "Modal.css" }
+            { "type": "file", "name": "Accordion.jsx" },
+            { "type": "file", "name": "Accordion.scss" }
           ]
         },
         { "type": "file", "name": "index.js" },
-        { "type": "file", "name": "index.html" }
+        { "type": "file", "name": "index.css" }
       ]
     },
     { "type": "file", "name": "package.json" }

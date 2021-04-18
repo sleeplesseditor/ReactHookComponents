@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { AiOutlineFile, AiOutlineFolder } from "react-icons/ai";
-import { DiJavascript1, DiCss3Full, DiHtml5, DiReact } from "react-icons/di";
+import { AiOutlineFile, AiOutlineFolder, AiOutlineFolderOpen } from "react-icons/ai";
+import { DiJavascript1, DiCss3Full, DiHtml5, DiReact, DiSass } from "react-icons/di";
 import './FolderTree.scss';
 
 const FILE_ICONS = {
     js: <DiJavascript1 />,
     css: <DiCss3Full />,
     html: <DiHtml5 />,
-    jsx: <DiReact />
+    jsx: <DiReact />,
+    scss: <DiSass />
 };
 
 const Collapsible = ({ children, isOpen }) => {
@@ -38,7 +39,7 @@ const Folder = ({ name, children }) => {
     return (
         <div className="tree-folder">
             <div className="folder--label" onClick={handleToggle}>
-                <AiOutlineFolder />
+                {isOpen ? <AiOutlineFolderOpen /> : <AiOutlineFolder />}
                 <span>{name}</span>
             </div>
             <Collapsible isOpen={isOpen}>{children}</Collapsible>
