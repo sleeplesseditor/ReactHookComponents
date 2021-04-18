@@ -1,6 +1,15 @@
 .tree {
     &-collapsible {
-        overflow: hidden;
+        transition: max-height 0.15s ease-out;
+
+        &-closed {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        &-open {
+            max-height: 500px;
+        }
     }
 
     &-file {
@@ -14,6 +23,7 @@
 
     &-folder {
         padding-left: 20px;
+        cursor: pointer;
 
         .folder--label {
             display: flex;

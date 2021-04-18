@@ -10,9 +10,9 @@ const FILE_ICONS = {
     jsx: <DiReact />
 };
 
-const Collapsible = ({ isOpen }) => {
+const Collapsible = ({ children, isOpen }) => {
     return (
-        <div className="tree-collapsible" style={{ height: `${isOpen ? '0' : 'auto'}`}}>{}</div>
+        <div className={`tree-collapsible${isOpen ? '-open' : '-closed'}`}>{children}</div>
     )
 }
 
@@ -29,6 +29,7 @@ const File = ({ name }) => {
 
 const Folder = ({ name, children }) => {
     const [isOpen, setIsOpen] = React.useState(false);
+
     const handleToggle = e => {
         e.preventDefault();
         setIsOpen(!isOpen);
@@ -42,13 +43,31 @@ const Folder = ({ name, children }) => {
             </div>
             <Collapsible isOpen={isOpen}>{children}</Collapsible>
         </div>
-    )
+    );
 };
 
-const Tree = ({ children }) => {
-    return <div className="tree-main">{children}</div>
+const TreeRecursive = ({ data }) => {
+    return data.map(item => {
+        if (item.type === "file") {
+            return <File name={item.name} />;
+        }
+        if (item.type === "folder") {
+            return (
+                <Folder name={item.name}>
+                    {console.log('ITEM', item.childrens)}
+                    <TreeRecursive data={item.childrens} />
+                </Folder>
+            );
+        }
+    });
+  };
+
+const FolderTree = ({children, data}) => {
+    const isImparative = data && !children;
+
+    return <div className="tree-main">{isImparative ? <TreeRecursive data={data} /> : children}</div>
 }
 
 export { 
-    Tree
+    FolderTree
 }
