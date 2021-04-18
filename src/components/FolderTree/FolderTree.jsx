@@ -55,7 +55,6 @@ const TreeRecursive = ({ data }) => {
         if (item.type === "folder") {
             return (
                 <Folder name={item.name}>
-                    {console.log('ITEM', item.childrens)}
                     <TreeRecursive data={item.childrens} />
                 </Folder>
             );
@@ -65,7 +64,6 @@ const TreeRecursive = ({ data }) => {
 
 const FolderTree = ({children, data}) => {
     const isImparative = data && !children;
-
     return <div className="tree-main">{isImparative ? <TreeRecursive data={data} /> : children}</div>
 }
 
